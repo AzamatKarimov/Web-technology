@@ -8,7 +8,7 @@ sudo service nginx restart
 
 #sudo gunicorn -c /home/box/web/etc/gunicorn.conf hello.app 
 #sudo gunicorn -c /home/box/web/etc/gunicorn_django.conf wsgi:application 
-#sudo service gunicorn restart
+sudo service gunicorn restart
 #sudo service mysql start
 
 sudo gunicorn -b 0.0.0.0:8080 hello:app&
